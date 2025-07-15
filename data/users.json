@@ -1,0 +1,35 @@
+[
+  {
+    "userId": "8be7a732-624b-46a7-a904-ef3795d4c01b",
+    "firstName": "Johnny",
+    "lastName": "Doestar",
+    "email": "john@example.com",
+    "password": "Johnny@2024",
+    "dateOfBirth": "1998-01-01",
+    "agreeToTerms": true,
+    "phoneNumber": "+919876543210",
+    "createdAt": "2025-07-15T16:23:50.701Z"
+  },
+  {
+    "userId": "4c93b36c-72cb-43ec-9aa0-2977b1245d79",
+    "firstName": "Ravi",
+    "lastName": "Verma",
+    "email": "ravi.verma@example.com",
+    "password": "Ravi#2024",
+    "dateOfBirth": "1992-03-22",
+    "agreeToTerms": true,
+    "phoneNumber": "+917654321098",
+    "createdAt": "2025-07-15T16:28:56.320Z"
+  },
+  {
+    "userId": "775b0dab-11cf-40e0-82f0-f5a449471c7a",
+    "firstName": "Ayesha",
+    "lastName": "Khan",
+    "email": "ayesha.khan@example.com",
+    "password": "Ayesh@123",
+    "dateOfBirth": "1990-12-01",
+    "agreeToTerms": true,
+    "phoneNumber": "+919812345678",
+    "createdAt": "2025-07-15T16:29:07.438Z"
+  }
+]
