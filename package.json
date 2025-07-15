@@ -25,6 +25,7 @@
   "homepage": "https://github.com/dvlprkaushik/user-registration-system-ts#readme",
   "dependencies": {
     "chalk": "^5.4.1",
+    "dayjs": "^1.11.13",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
