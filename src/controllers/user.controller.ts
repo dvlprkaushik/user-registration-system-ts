@@ -5,7 +5,7 @@ import type { RequestHandler } from "express";
 import { mkdir, readFile, writeFile } from "fs/promises";
 import { sanitizeUser } from "@/utils/sanitizeUser.js";
 
-const USERS: User[] = [];
+export const USERS: User[] = [];
 export const createUser: RequestHandler<{}, {}, UserBody> = async (
   req,
   res

@@ -1,5 +1,7 @@
 import { z } from "zod";
 import dayjs from "dayjs";
+import { USERS } from "@/controllers/user.controller.js";
+import type { User } from "@/types/user.types.js";
 
 const nameRegex = /^[A-Za-z][A-Za-z-' ]{1,49}$/;
 
@@ -16,7 +18,7 @@ const blockedDomains: string[] = [
   "yopmail.com",
   "tempmail.com",
 ];
-const existingUsers: string[] = ["kaushik@gmail.com"]; // Example, replace with DB check
+const existingUsers: User[] = USERS;
 
 const emailSchema = z
   .email({ message: "Invalid email format" })
@@ -28,7 +30,7 @@ const emailSchema = z
     },
     { message: "Disposable or blocked domains are not allowed" }
   )
-  .refine((email) => !existingUsers.includes(email), {
+  .refine((email) => !existingUsers.map(e => e.email).includes(email), {
     message: "Email already taken",
   });
 
