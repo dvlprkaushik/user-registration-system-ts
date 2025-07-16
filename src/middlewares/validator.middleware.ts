@@ -1,7 +1,7 @@
 import type { RequestHandler } from "express";
 import { z, type ZodType } from "zod";
 
-export const validatorBody = <T extends z.ZodType>(schema: T) => {
+export const validatorBody = <T extends ZodType>(schema: T) => {
   const validator: RequestHandler<{}, {}, z.infer<T>> = (req, res, next) => {
     const result = schema.safeParse(req.body);
     if (!result.success) {

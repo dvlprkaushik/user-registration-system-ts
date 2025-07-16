@@ -6,5 +6,8 @@ import { Router } from "express";
 const userRoute = Router();
 
 userRoute.post("/auth/register",validatorBody(userSchema),createUser);
+userRoute.get("/ping", (req, res) => {
+    return res.status(200).json({ message: "pong ✅ from userRoute" });
+});
 
 export { userRoute };

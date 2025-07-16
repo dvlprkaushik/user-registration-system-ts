@@ -6,7 +6,7 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
-    // "typeRoots" : ["/node_modules/@types","src/"],
+    "typeRoots": ["./node_modules/@types", "./src/types/express"],
     "strict": true,
     "baseUrl": "./src",
     "paths": {
@@ -15,8 +15,8 @@
     "verbatimModuleSyntax": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "types" : ["node"]
+    "types": ["node"]
   },
   "exclude": ["node_modules"],
-  "include" : ["src","src/configs/env.d.ts"]
+  "include": ["src", "src/configs/env.d.ts"]
 }

@@ -1,28 +1,6 @@
 [
   {
-    "userId": "8be7a732-624b-46a7-a904-ef3795d4c01b",
-    "firstName": "Johnny",
-    "lastName": "Doestar",
-    "email": "john@example.com",
-    "password": "Johnny@2024",
-    "dateOfBirth": "1998-01-01",
-    "agreeToTerms": true,
-    "phoneNumber": "+919876543210",
-    "createdAt": "2025-07-15T16:23:50.701Z"
-  },
-  {
-    "userId": "4c93b36c-72cb-43ec-9aa0-2977b1245d79",
-    "firstName": "Ravi",
-    "lastName": "Verma",
-    "email": "ravi.verma@example.com",
-    "password": "Ravi#2024",
-    "dateOfBirth": "1992-03-22",
-    "agreeToTerms": true,
-    "phoneNumber": "+917654321098",
-    "createdAt": "2025-07-15T16:28:56.320Z"
-  },
-  {
-    "userId": "775b0dab-11cf-40e0-82f0-f5a449471c7a",
+    "userId": "428b0630-d4e2-4403-9e6c-7a5aeddd78ce",
     "firstName": "Ayesha",
     "lastName": "Khan",
     "email": "ayesha.khan@example.com",
@@ -30,6 +8,17 @@
     "dateOfBirth": "1990-12-01",
     "agreeToTerms": true,
     "phoneNumber": "+919812345678",
-    "createdAt": "2025-07-15T16:29:07.438Z"
+    "createdAt": "2025-07-16T07:01:59.440Z"
+  },
+  {
+    "userId": "8f6a7977-2033-480d-a5a0-c1b6757ccc7f",
+    "firstName": "Rohan",
+    "lastName": "Mehra",
+    "email": "rohan.mehra@example.com",
+    "password": "Rohan@987",
+    "dateOfBirth": "1995-08-20",
+    "agreeToTerms": true,
+    "phoneNumber": "+919811112233",
+    "createdAt": "2025-07-16T07:08:03.257Z"
   }
 ]

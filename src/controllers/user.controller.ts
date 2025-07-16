@@ -33,14 +33,16 @@ export const createUser: RequestHandler<{}, {}, UserBody> = async (
   };
 
   try {
-    const filePath = path.join(process.cwd(), "data", "users.json");
+    // const filePath = path.join(process.cwd(), "data", "users.json");
 
+    const filePath = process.env.DATA_PATH;
     await mkdir(path.dirname(filePath), { recursive: true });
 
     let existingUsers: User[] = [];
+
     try {
       const fileData = await readFile(filePath, "utf-8");
-      existingUsers = JSON.parse(fileData);
+      existingUsers = fileData.trim() === "" ? [] : JSON.parse(fileData);
     } catch (error: any) {
       if (error.code !== "ENOENT") throw error;
     }
@@ -65,5 +67,13 @@ export const createUser: RequestHandler<{}, {}, UserBody> = async (
       message: "User registered successfully",
       data: safeUser,
     });
-  } catch (error) {}
+  } catch (error) {
+    console.error("❌ Server error in controller:", error);
+
+    return res.status(500).json({
+      success: false,
+      message: "Something went wrong",
+      error: error instanceof Error ? error.message : String(error),
+    });
+  }
 };

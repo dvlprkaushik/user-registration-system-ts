@@ -7,6 +7,7 @@ import {
 } from "./middlewares/global.middleware.js";
 import chalk from "chalk";
 import { userRoute } from "./routes/user.routes.js";
+import { userLimiter } from "./middlewares/limiter.middleware.js";
 
 dotenv.config({ quiet: true });
 
@@ -18,7 +19,6 @@ app.get("/", (req, res) => res.status(200).json({ status: "OK" }));
 
 // * Route
 app.use("/api/v1", userRoute);
-
 
 app.use(notFoundHandler);
 app.use(errorHandler);
